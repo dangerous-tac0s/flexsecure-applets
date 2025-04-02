@@ -2,6 +2,22 @@
 
 When compiling the applets using the build scripts in this repository, the following IDs are used.
 
+## flexSecure
+| Lifecycle     | Suggested Name                                                                         |  License  | AIDs                                |  AID Notes            | 
+|---------------|----------------------------------------------------------------------------------------|-----------|-------------------------------------|-----------------------|
+| ✅&nbsp;Active     | [HMAC-SHA1 Challenge-Response](https://github.com/DangerousThings/flexsecure-ykhmac)  | MPL v2    | **Cap**:&nbsp;A00000052720<br /> **Standard**:&nbsp;A000000527200101<br /> **Encoded**:&nbsp;A000000527200101 | None | 
+| ✅ Active     | [OpenPGP Card 3.4](https://github.com/ANSSI-FR/SmartPGP)                              | GPL v2    | **Cap**:&nbsp;D27600012401<br /> **Standard**:&nbsp;D27600012401XXXXYYYYZZZZZZZZ0000<br />**Encoded**:&nbsp;D276000124010304000A000000000000 | None | 
+| ✅ Active     | [Keycard.tech BIP32 Wallet](https://github.com/status-im/status-keycard)              | Apache&nbsp;v2 | **Cap**:&nbsp;A0000008040001<br /> **Standard**:&nbsp;A0000008040001[01,02,03]<br /> **Encoded**:&nbsp;A0000008040001[01,02,03] | Only the Keycard and Cash applet are deployed, the NDEF integration is skipped. Trailing 01 due to legacy configuration. | 
+| ✅ Active     | [NDEF Storage](https://github.com/OpenJavaCard/openjavacard-ndef)                     | GPL v3    | **Cap**:&nbsp;D276000085<br /> **Standard**:&nbsp;D2760000850101<br /> **Encoded**:&nbsp;D2760000850101 | None | 
+| ✅ Active     | [OTP Authenticator](https://github.com/VivoKey/apex-totp)                             | GPL v3    | **Cap**:&nbsp;A00000052721010141504558<br /> **Standard**:&nbsp;A0000005272101<br /> **Encoded**:&nbsp;A0000005272101014150455801 | Trailing 014150455801 is used to detect Vivokey deployments. | 
+| ✅ Active     | [Memory Usage Reporting](https://github.com/DangerousThings/javacard-memory)          | GPL v3    | **Cap**:&nbsp;A0000008466D656D6F7279<br /> **Standard**:&nbsp;N/A<br /> **Encoded**:&nbsp;A0000008466D656D6F727901 | None | 
+| ✅ Active     | [FIDO2](https://github.com/BryanJacobs/FIDO2Applet)                                   | MIT       | **Cap**:&nbsp;???<br /> **Standard**:&nbsp;A0000006472F0001<br /> **Encoded**:&nbsp;??? | None | 
+
+## Apex
+| Lifecycle           | Vivokey Branding   |  License  |  VivoKey Fidesmo App ID  |  Fidesmo AID  |  AID Notes |
+|---------------------|--------------------|-----------|--------------------------------------------|-----------|------------|
+| ✅&nbsp;Active     | [HMAC-SHA1 Generator](https://github.com/DangerousThings/flexsecure-ykhmac)  | MPL v2    | 2f2e363b | A000000527200101 | None |
+<!--
 | Lifecycle     | Vivokey Branding     | Suggested Name               | Source Code                                                                            | License     | Vivokey Fidesmo App ID | CAP Package ID             | Industry Standard AID(s)           | CAP Encoded AID(s)                 | Fidesmo Deployed AID(s)            | Notes on the AID(s) |
 | ------------- | -------------------- | ---------------------------- | -------------------------------------------------------------------------------------- | ----------- | ---------------------- | -------------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- | ------------------- | 
 | ✅ Active     | HMAC-SHA1 Generator  | HMAC-SHA1 Challenge-Response | [flexsecure-ykhmac](https://github.com/DangerousThings/flexsecure-ykhmac)              | MPL v2      | `2f2e363b`             | `A00000052720`             | `A000000527200101`                 | `A000000527200101`                 | `A000000527200101`                 | None |
@@ -16,3 +32,4 @@ When compiling the applets using the build scripts in this repository, the follo
 | ✅ Active     | Tesla Keycard        | Tesla Keycard                | [apex-tesla](https://github.com/VivoKey/apex-tesla)                                    | Proprietary | `e819c674`             | `7465736C614C6F676963`     | `7465736C614C6F67696330303201`     | `7465736C614C6F67696330303201`     | `F465736C614C6F67696330303201`     | Unknown why the encoded AID is different from the actually used one. |
 | ❌ Obsolete   | N/A                  | Ledger Unplugged             | [apex-ledger-unplugged](https://github.com/VivoKey/apex-ledger-unplugged)              | AGPL v3     | N/A                    | `FF4C4547522E57414C543031` | `FF4C4547522E57414C5430312E493031` | `FF4C4547522E57414C5430312E493031` | N/A                                | N/A |
 | ❌ Obsolete   | N/A                  | Ledger Unplugged Eligibility | [ledger-javacard-eligibility](https://github.com/LedgerHQ/ledger-javacard-eligibility) | AGPL v3     | N/A                    | `FF4C4547522E454C49473031` | `FF4C4547522E454C494730312E493031` | `FF4C4547522E454C494730312E493031` | N/A                                | N/A |
+-->
