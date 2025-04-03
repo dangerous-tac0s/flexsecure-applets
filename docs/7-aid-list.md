@@ -2,6 +2,9 @@
 
 When compiling the applets using the build scripts in this repository, the following IDs are used.
 
+## AIDs
+TODO: Ask Chris why we have three different AIDs
+
 ## flexSecure
 | Lifecycle     | Suggested Name                                                                         |  License  | AIDs                                |  AID Notes            | 
 |---------------|----------------------------------------------------------------------------------------|-----------|-------------------------------------|-----------------------|
