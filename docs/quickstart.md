@@ -148,7 +148,7 @@ The following apps can be installed with a single GPP command and the requisite 
 
 ## Apps with additional setup
 ### [SmartPGP](https://github.com/github-af/SmartPGP)
-This one comes in two flavors: default and large. Do yourself a favor and stick to default--unless you want really large, insecure RSA keys.
+This one comes in two flavors: default and large. Do yourself a favor and stick to default--unless you want really large, inefficient RSA keys.
 
 The SmartPGP applet is configured with the following default values:
 - Admin PIN is 12345678;
